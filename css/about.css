@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+    height: 1100px;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.home.type-3 {
+    background: linear-gradient(#1470a517, #010111c7), url(../assets/parrlex-back-pic.jpg) bottom center;
+    width: 100%;
+    display: table;
+    position: relative;
+    z-index: -1;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.home.type-3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.home-content h2 {
+    margin-top: -150px;
+    color: white;
+    margin-left: 15px;
+}
+
+.container-cloud {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    z-index: 2;
+    position: relative;
+    margin-top: -79px;
+}
+
+.heading-glance {
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+.space-ef {
+    font-size: 50px;
+    letter-spacing: 14px;
+    background: linear-gradient(35deg, #ffffff, #36a7e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.element {
+    color: white;
+    font-size: 30px;
+    margin-left: 18px;
+    font-weight: 100;
+}
+
+#scene {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    margin-bottom: -10px;
+    z-index: 100;
+}
+
+#scene .l1 {
+    margin-left: -399px;
+}
+
+#scene .l2 {
+    margin-top: -399px;
+}
+
+#scene .l3 img {
+    margin-left: 181px;
+    margin-top: 100px;
+}
+
+p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-info {
+    width: 80%;
+}
+
+.info-heading {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    background: linear-gradient(35deg, #17045a, #36a7e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.features-heading-info p {
+    line-height: 35px;
+    letter-spacing: 1.2px;
+    margin-top: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.feature-heading-container {
+    font-size: 25px;
+    font-weight: 600;
+    background: linear-gradient(35deg, #17045a, #36a7e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.feature-heading-container:hover {
+    margin-left: 6px;
+}
+
+.info-box b {
+    background: linear-gradient(35deg, #17045a, #36a7e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.little-info {
+    padding: 25px;
+}
+
+.little-info i {
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.thanks-line {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgb(0, 0, 0);
+    background: linear-gradient(35deg, #17045a, #36a7e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-cloud {
+        text-align: center;
+    }
+    .heading-glance {
+        font-size: 25px;
+    }
+    .space-ef {
+        font-size: 35px;
+    }
+    .element {
+        color: white;
+        font-size: 20px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    section {
+        text-align: center;
+    }
+    .features-heading-info p {
+        width: 100%;
+        line-height: 25px;
+        letter-spacing: 1.2px;
+        margin-top: 5px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    .info-heading {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Weather at Glance</title>
+    <!-- fevicon-link -->
+    <link rel="shortcut icon" href="assets/fevicon.png">
+    <!-- fevicon-link -->
+    <!-- google-fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- fevicon-link -->
+    <!-- css-files -->
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- css-files -->
+    <!-- bootstrap-icons-links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- bootstrap-icons-links -->
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/weather-logo.png" alt="Logo" id="logo-image" />
+                <span class="site-name">Weather at Glance</span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <div class="menu-show">
+                <i class="bi bi-list" id="menu-show"></i>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <div class="home type-3">
+                <div class="home-content">
+                    <div class="container-cloud">
+                        <h2 class="heading-glance">Welcome at <span class="space-ef"> GLANCE</span></h2>
+                        <span class="element" data-text1="Welcome to Weather at Glance" data-text2="Today's Forecast: At a Glance" data-text3="Right Now, Right Here" data-loop="true" data-backdelay="1500"></span>
+                        </h2>
+                    </div>
+                </div>
+                <ul id="scene">
+                    <li class="layer l1" data-depth="0.25"> <img src="assets/cloudd.png"></li>
+                    <!-- <li class="layer l2" data-depth="0.75"> <img src="assets/cloud-2.png"></li> -->
+                    <li class="layer l3" data-depth="0.57"> <img src="assets/cloud-2.png"></li>
+                </ul>
+            </div>
+            <br><br>
+        </div>
+        <section>
+            <div class="about-info">
+                <div class="info-heading">About Weather at Glance</div>
+                <div class="features-heading-info">
+                    <span class="feature-heading-container bottom-effect">
+                    Features:
+                </span>
+                    <span class="info-box"><p><b>Real-Time Weather Data:</b> Get the current temperature, wind speed, humidity, and more for any location worldwide.</p></span>
+                    <span class="info-box"><p><b>Easy to Use:</b> Simply enter the name of the city or town, and instantly see the weather details displayed on an intuitive card.</p></span>
+                    <span class="info-box"><p><b>Open Source:</b> The core functionality of our app is open source, allowing anyone to understand how the data is processed and displayed. Feel free to contribute or customize the code as per your needs!</p></span>
+                </div>
+                <div class="little-info">
+                    <i>Our mission is to provide a simple and reliable tool for everyone who needs quick access to weather information. We're constantly improving the app and adding new features to make it even better.</i>
+                </div>
+
+                <div class="thanks-line">Thank you for using Weather at Glance.</div>
+            </div>
+        </section>
+    </main>
+    <!-- other-js-files -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/about.js"></script>
+    <!-- other-js-files -->
+</body>
+
+</html>

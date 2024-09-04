@@ -1,0 +1,349 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+.full-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-image: linear-gradient(#0000000c, #00000049), url(../assets/main-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 100%;
+}
+
+
+/* nav-bar */
+
+
+/* Navbar styles */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 100%;
+    top: 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.drop-down-logo {
+    width: 50px;
+}
+
+#logo-image {
+    height: 55px;
+    margin-right: 10px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: 500;
+    background: linear-gradient(35deg, #17045a, #36a7e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    background: linear-gradient(35deg, #1e0578, #36a7e9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-show {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* nav-bar */
+
+
+/* weather-card */
+
+.card {
+    background: rgba(184, 183, 183, 0.062);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    color: white;
+    padding: 50px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 52%;
+    margin: 14px;
+    overflow: hidden;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+button:hover {
+    background: #7c7c7c6b;
+}
+
+.city {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.temp {
+    font-size: 32px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.275);
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.js-tilt-glare {
+    border-radius: 10px;
+}
+
+a {
+    margin-top: 7%;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-set {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.set-icon-feature {
+    font-size: 20px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.set-icon-temp {
+    font-size: 28px;
+}
+
+.weight-fe {
+    font-weight: 600;
+}
+
+.icon-feature {
+    margin-top: 20px;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* weather-card */
+
+.fotter {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.741);
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+}
+
+.con-hed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.flag-icon {
+    width: 28px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+    .card {
+        max-width: 70%;
+        height: auto;
+    }
+    .city {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        max-width: 90%;
+        height: auto;
+    }
+    .city {
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .card {
+        max-width: 92%;
+        height: auto;
+    }
+    .city {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+/* nav-bar */
+
+@media (max-width: 650px) {
+    .site-name {
+        font-size: 20px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #ffffff;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+    }
+    .nav-links li {
+        width: 100%;
+    }
+    .nav-links li a {
+        margin-top: 12px;
+    }
+    .nav-links.active {
+        display: flex;
+        height: 100%;
+        transition: all 0.5 ease;
+        cursor: pointer;
+    }
+    .nav-links.active:hover {
+        background-color: #17045a;
+    }
+    .nav-links li {
+        margin: 15px 0;
+    }
+    .menu-show {
+        display: block;
+    }
+}
